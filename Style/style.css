@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color-1:#00A9FF;
+    --main-color-2:#00BFFF;
+    --main-color-3:#00D4FF;
+    --main-color-4:#00E9FF;
+    --main-color-5:#00FFFF;
+    --text-color: #33415c ;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo img{
+    width: 130px;
+}
+
+.search-Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-Box button{
+    background-color: var(--main-color-1);
+    color: white;
+    padding-inline: 20px;
+    transition: all 0.3s ease;
+}
+.search-Box button:hover{
+    background-color: var(--main-color-3);
+}
+.search-Box input[type="text"]{
+    border-color: var(--main-color-1);
+    font-family: 'Poppins', sans-serif;
+}
+.search-Box input[type="text"]:focus{
+    box-shadow: 0 0 0 1px var(--main-color-2);
+    border-color: var(--main-color-1);
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    width: 25vw;
+}
+
+.city-name{
+    background-color: var(--main-color-1);
+    color: white;
+    text-align: center;
+    border: none;
+  
+}
+
+.city-name h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.table{
+    width: 40vw;
+    margin: 5rem auto ;
+}
+.tableHeading{
+    font-size: 1.3rem;
+}
